@@ -1,0 +1,137 @@
+/*accueil*/
+
+header {
+    width: 100%;
+    height: 150%;
+  
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    overflow-x: hidden;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(216,216,224,1) 0%, rgba(53,221,255,1) 78%);
+}
+
+
+
+.logoprincipal{
+    display: block;
+ margin: 0px auto;
+}
+/*titre de la page*/
+.titrepage {
+    text-align: center;
+    color: rgb(6, 27, 51);
+    font-size: x-large;
+}
+
+/*onglet*/
+.centrer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.centrer li {
+    text-align: center;
+    padding: 10px;
+    list-style-type:none;
+    font-size: large;
+}
+/*marseille*/
+
+
+.but{
+    text-align: center;
+    color: rgb(6, 27, 51);
+    font-size: x-large;
+}
+
+/* permet de d'avoir une couleur rouge en passant sur ma nav*/
+.red:hover {
+    color: red;
+}
+/*mise en forme*/
+
+.exist{
+  text-align: center;
+  float: left;
+margin: 0 15px 15px 0;
+font-size: x-large;
+color: rgb(6, 27, 51);
+   
+}
+/* image déroulante en fin de page d'accueil */
+.joueur{
+    overflow: hidden;
+    width: 400px;
+    display: flex;
+}
+.animation {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: joueurs;
+    animation-iteration-count: infinite;
+}
+@keyframes joueurs {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-400px);
+    }
+    50% {
+        transform: translateX(-800px)
+    }
+    75%{
+        transform: translateX(-1200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+/*tout les titres mise en forme*/
+.lestitres {    
+    color: rgb(6, 27, 51);
+    font-size: x-large;
+
+}
+
+.historique{
+    text-align: center;
+    color: rgb(6, 27, 51);
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.stade{
+    text-align: center;
+}
+/* site de l'om placé au milieu et agrandi*/
+.siteom{
+    text-align: center;
+    font-size: large;
+}
+.fin{
+    text-align: center;
+}
+/* trait noir afin de créer un block*/
+.wrap {
+    border-right: 1px solid black; 
+    border-left: 1px solid black;
+    padding: 0 134px;
+}
+
+.contact{
+    text-align: center;
+}
+
+.bloc2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
